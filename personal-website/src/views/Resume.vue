@@ -15,6 +15,13 @@
     }
 
     .resume-holder img {
+        width: 100%;
+    }
+
+    /* Desktop Styles */
+  @media only screen and (min-width: 961px) {
+    .resume-holder img {
         width: 65%;
     }
+  }
 </style>

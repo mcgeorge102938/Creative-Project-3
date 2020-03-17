@@ -72,6 +72,84 @@
 </template>
 
 
+
+
+<style>
+.pets {
+  background-color: black;
+}
+
+.doggo {
+  background-color: black;
+  align-items: center;
+  text-align: center;
+}
+
+.pets h1 {
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.pets button {
+  background-color: #77cbe7;
+  border: solid 1px black;
+  height: 40px;
+  font-style: oblique;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+
+.animal-columns {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+}
+
+.animal-column {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.adoptee {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: solid 10px black;
+}
+
+.pets img {
+  width: 100%;
+}
+
+.pets h2 {
+  font-size: 20px;
+}
+
+/* Desktop Styles */
+  @media only screen and (min-width: 961px) {
+    .animal-columns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    background-color: black;
+    flex-direction: row;
+    }
+  .animal-column {
+    display: flex;
+    flex-direction: column;
+    width: 27.5%;
+    }
+  }
+</style>
+
+
 <script>
 export default {
   name: 'Doggo',
@@ -249,59 +327,3 @@ export default {
   }
 }
 </script>
-
-
-<style>
-.pets {
-  background-color: black;
-}
-
-.doggo {
-  background-color: black;
-  align-items: center;
-  text-align: center;
-}
-
-.pets h1 {
-  padding: 20px;
-  color: white;
-}
-
-.pets button {
-  background-color: #77cbe7;
-  border: solid 1px black;
-  height: 40px;
-  font-style: oblique;
-  margin-bottom: 25px;
-  margin-top: 5px;
-}
-
-.animal-columns {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    background-color: black;
-}
-
-.animal-column {
-    display: flex;
-    flex-direction: column;
-    width: 27.5%;
-}
-
-.adoptee {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border: solid 10px black;
-}
-
-.pets img {
-  width: 100%;
-}
-
-.pets h2 {
-  font-size: 20px;
-}
-</style>

@@ -3,7 +3,7 @@
   <div id="menu">
       <router-link to="/">
         <div class="menu-item">
-          <p>Home</p>
+          <p>HOME</p>
         </div>
       </router-link>
       <router-link to="/resume">
