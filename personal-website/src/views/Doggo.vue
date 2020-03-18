@@ -160,7 +160,6 @@ export default {
           .then(function(response) {
             return response.json();
           }).then(function(json) {
-          console.log(json);
           var image1 = "<img src='" + json[0].url + "'/>";
           if (json[0].breeds.length > 0) {
             image1 += "<h2>" + json[0].breeds[0].name + "</h2> <p>(Bred for: " + json[0].breeds[0].bred_for + ")</p>";
