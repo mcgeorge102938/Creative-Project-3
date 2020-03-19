@@ -183,8 +183,6 @@ export default {
             return response.json();
             
           }).then(function(json) {
-            console.log(json);
-          
           for (var i = 0; i < 19; i++){
               var image = "<img src='" + json[i].url + "'/>";
               if (json[i].breeds.length > 0) {
